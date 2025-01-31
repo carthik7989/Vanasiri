@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: "GillSans";
+  src: url("assets/fonts/GillSansLight.otf") format("opentype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("assets/fonts/GillSansRegular.otf") format("opentype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Centaur";
+    src: url("assets/fonts/Centaur.ttf") format("opentype");
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "TimesNewRoman";
+    src: url("assets/fonts/TimesNewRoman.ttf") format("opentype");
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */
+
+.custom-swiper-scrollbar.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: relative;
+ 
+  z-index: 50;
+  height: var(--swiper-scrollbar-size,2px);
+  width: 50%;
+}
+.custom-swiper-scrollbar .swiper-scrollbar-drag {
+  background: #009889; /* Dark green scrollbar handle */
+  height: 100%;
+  border-radius: 4px;
+}
+
+@layer components {
+    .max-container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+     /* Chrome, Safari and Opera */
+     .scrollbar-hidden::-webkit-scrollbar {
+        display: none;
+      }
+    
+      .scrollbar-hidden {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+      }
+    
+  }
