@@ -1,3 +1,5 @@
+
+
 const menu = document.querySelector('.menu');
 const close = document.querySelector('.close');
 const popup = document.querySelector('.popup');
@@ -38,7 +40,7 @@ const slideTexts = [
 
 const mainSwiper = new Swiper(".main-swiper", {
   direction: "horizontal",
-  loop: true,
+  loop: false,
 
   pagination: {
     el: ".main-swiper-pagination",
@@ -52,11 +54,14 @@ const mainSwiper = new Swiper(".main-swiper", {
   on: {
     init: function () {
       updateSlideText(this.realIndex);
+      updateNavButtons(this);
     },
     slideChange: function () {
       updateSlideText(this.realIndex);
+      updateNavButtons(this);
     },
   },
+
 });
 
 function updateSlideText(index) {
@@ -64,17 +69,24 @@ function updateSlideText(index) {
   slideText.textContent = slideTexts[index];
 }
 
+function updateNavButtons(swiper) {
+  const mainButtonPrev = document.querySelector('.main-swiper-button-prev');
+const mainButtonNext = document.querySelector('.main-swiper-button-next');
+  mainButtonPrev.disabled = swiper.isBeginning;
+  mainButtonNext.disabled = swiper.isEnd;
+}
+
 const innerSwiper1 = new Swiper(".inner-swiper-1", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   // grabCursor: true,
   nested: true,
-  noSwiping: true,
+  noSwiping: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -85,6 +97,9 @@ const innerSwiper1 = new Swiper(".inner-swiper-1", {
     },
   },
 });
+
+
+
 
 const innerSwiper2 = new Swiper(".inner-swiper-2", {
   direction: "horizontal",
@@ -129,7 +144,7 @@ const innerSwiper3 = new Swiper(".inner-swiper-3", {
   },
 });
 
-var verticalSwiper = new Swiper(".vertical-swiper", {
+const verticalSwiper = new Swiper(".vertical-swiper", {
   direction: "vertical",
   slidesPerView: "auto",
   freeMode: true,

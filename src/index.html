@@ -18,7 +18,7 @@
 
   <body class="relative h-full">
     <!-- Popup -->
-    <div class="popup fixed   w-full h-full bg-customGreen z-20 hidden ">
+    <div class="popup fixed   w-full h-full bg-customGreen z-20 hidden font-philosopher ">
         <div class="w-full h-full flex flex-col p-4 gap-5">
             <div class="close self-end text-white hover:cursor-pointer">Close</div>
             <div class="grid grid-cols-4 gap-4 h-full">
@@ -60,12 +60,12 @@
     </div>
     <!-- Popup End -->
     <!-- Header -->
-    <header class="fixed top-0 w-full z-10">
+    <header class="fixed top-0 w-full z-10 font-philosopher">
       <!-- Top Bar -->
       <div
-        class="py-2 bg-customGreen text-center text-white text-4xl font-centaur"
+        class="py-2 flex justify-center items-center bg-customGreen "
       >
-        Vanasiri
+        <img src="assets/icons/logo.svg" alt="logo" width="150">
       </div>
       <!-- Top Bar End -->
 
@@ -96,9 +96,35 @@
             </div>
           </div>
 
-          <div class="flex space-x-5">
-            <div class="main-swiper-button-prev">Prev</div>
-            <div class="main-swiper-button-next">Next</div>
+          <div class="flex space-x-2">
+            <button class="main-swiper-button-prev text-customGreen disabled:text-customGreen disabled:text-opacity-50 disabled:cursor-not-allowed">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="26" height="26" viewBox="0 0 26 26">
+                    <defs>
+                      <clipPath id="master_svg0_20_323">
+                        <rect x="0" y="0" width="26" height="26" rx="0" />
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#master_svg0_20_323)">
+                      <rect x="0" y="0" width="26" height="26" rx="0" fill="#ACACAE" fill-opacity="1" />
+                      <g>
+                        <path d="M17.59,22.16L8,12.58L17.59,3L17.990000000000002,3.41L8.82,12.58L17.990000000000002,21.75L17.59,22.16Z" fill="#808080" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                      </g>
+                    </g>
+                  </svg>            </button>
+            <button class="main-swiper-button-next text-customGreen disabled:text-customGreen disabled:text-opacity-50 disabled:cursor-not-allowed">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="26" height="26" viewBox="0 0 26 26">
+                    <defs>
+                      <clipPath id="master_svg0_20_338">
+                        <rect x="0" y="0" width="26" height="26" rx="0" />
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#master_svg0_20_338)">
+                      <rect x="0" y="0" width="26" height="26" rx="0" fill="#ACACAE" fill-opacity="1" />
+                      <g>
+                        <path d="M8.400002,3L17.990000000000002,12.58L8.400002,22.16L8,21.75L17.17,12.58L8,3.41L8.400002,3Z" fill="#808080" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                      </g>
+                    </g>
+                  </svg>            </button>
           </div>
         </div>
       </div>
@@ -154,7 +180,7 @@
             <!-- Row 1 End -->
 
              <!-- Row 2 -->
-             <div class="max-container py-16 text-h5 font-centaur text-center">Here’s why purchasing farmland is a smart and rewarding choice</div>
+             <div class="max-container pt-6 pb-16 text-h5 font-gillSans text-center">Here’s why purchasing farmland is a smart and rewarding choice</div>
              <!-- Row 2 End -->
 
               <!-- Row 3 -->
@@ -391,9 +417,9 @@
         <!-- Main Slide 3 End -->
 
         <!-- Main Slide 4 -->
-         <div class="swiper-slide flex flex-col font-centaur text-white overflow-y-scroll scrollbar-hidden">
+         <div class="swiper-slide flex justify-center items-center flex-col font-centaur text-white">
              <!-- Row 1 -->
-             <div class="flex min-h-screen w-full relative">
+             <div class="flex flex-1 w-full  relative">
                 <div class="w-1/2 bg-slide1 bg-cover bg-center"></div>
                 <div class="w-1/2 bg-slide2 bg-cover bg-center"></div>
                 <div class="flex flex-col  absolute bottom-5 left-1/2 transform -translate-x-1/2 p-16 bg-customGreen opacity-90">
@@ -405,55 +431,478 @@
             </div>
             <!-- Row 1 End -->
 
-             <!-- Row 2 -->
-             <div class="inner-swiper-1 relative">
+            <!-- Row 2 -->
+            <div class="swiper inner-swiper-1 w-full relative ">
                 <div class="swiper-wrapper">
                     <!-- Inner Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="w-[calc(100%-80px)] max-container py-16 text-gray-800 leading-none ">
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
-                                  </tr>
-                                  <tr class="text-h4 border-b border-b-gray-500 space-x-5">
+                                    <th class="w-1/3  text-left pb-2">City Life</th>
+                                    <th class="w-1/3  text-center pb-2">Aspect</th>
+                                    <th class="w-1/3  text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Pollution, noise, and concrete jungles</td>
-                                    <td class="uppercase py-5">
-                                        Environment</td>
-                                    <td class="py-5">Clean air, serene surroundings, and
-                                        lush greenery</td>
-                                  </tr>
-                            </table>
-                         </div>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Environment</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Clean air, serene surroundings, and
+                                            lush greenery</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
                     </div>
                     <!-- Inner Slide 1 End -->
 
                     <!-- Inner Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="w-[calc(100%-80px)] max-container py-16 text-gray-800 leading-none ">
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class=" text-left pb-2">City Life</th>
+                                    <th class=" text-center pb-2">Aspect</th>
+                                    <th class=" text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Fast-paced, competitive, and stressful</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase  py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Lifestyle</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Slow, peaceful, and balanced</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 2 End -->
+                    <!-- Inner Slide 3 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
                                     <th class="text-left pb-2">City Life</th>
                                     <th class="text-center pb-2">Aspect</th>
                                     <th class="text-left pb-2">Farm Life</th>
-                                  </tr>
-                                  <tr class="text-h4 border-b border-b-gray-500 space-x-5">
-                                    <td class="py-5">Pollution, noise, and concrete jungles</td>
-                                    <td class="uppercase py-5">
-                                        Environment</td>
-                                    <td class="py-5">Clean air, serene surroundings, and
-                                        lush greenery</td>
-                                  </tr>
-                            </table>
-                         </div>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Sedentary lifestyle, limited connection with nature</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Health Benefits</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Physical activity, healthier diet, and mental well-being</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
                     </div>
-                    <!-- Inner Slide 2 End -->
+                    <!-- Inner Slide 3 End -->
+
+                    <!-- Inner Slide 4 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Reliant on processed and store-bought food</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Food Quality</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Access to fresh, organic, and self-grown produce</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 4 End -->
+
+                    <!-- Inner Slide 5 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">High expenses for housing, utilities, and daily needs</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Cost of Living</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Lower cost of living with opportunities for self-reliance</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 5 End -->
+
+                    <!-- Inner Slide 6 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Limited space, crowded living, and minimal privacy</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Space and Privacy</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Expansive open spaces, privacy, and room to grow</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 6 End -->
+
+                    <!-- Inner Slide 7 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Constant traffic, honking, and construction disturbances</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Noise Levels</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Calm, quiet, and peaceful surroundings</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 7 End -->
+
+                    <!-- Inner Slide 8 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Often isolated, with little time for social interactions</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Community Bonding</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Close-knit community with opportunities for bonding</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 8 End -->
+
+                    <!-- Inner Slide 9 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Minimal, often restricted to parks or balconies</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Connection to Nature</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Deep connection with nature through daily life</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 9 End -->
+
+                    <!-- Inner Slide 10 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Longer commute times, less personal time</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Work-Life Balance</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Flexible schedules and more time for family</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 10 End -->
+
+                    <!-- Inner Slide 11 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Limited to urban settings like malls or gyms</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Recreational Activities<div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Outdoor activities like farming, hiking, and picnics</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 11 End -->
+
+                    <!-- Inner Slide 12 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th   class=" text-left pb-2">City Life</th>
+                                    <th  class=" text-center pb-2">Aspect</th>
+                                    <th  class=" text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td style="width: 30%;" class="py-5">Expensive apartments or limited-size houses</td>
+                                    <td  class="flex items-center justify-center flex-nowrap w-full gap-5 uppercase  py-5 " >
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div >Property ownership<div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td  class="py-5">Affordable land with scope for expansion or development</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 12 End -->
+
+                    <!-- Inner Slide 13 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">High resource consumption and carbon footprint</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Sustainability</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">High resource consumption and carbon footprint</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 13 End -->
+
+                    <!-- Inner Slide 14 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Higher due to work pressure and urban chaos</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Stress Levels</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Lower, with a focus on mindfulness and tranquility</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 14 End -->
+
+                    <!-- Inner Slide 15 -->
+                    <div class="swiper-slide flex justify-center items-center  ">
+                        <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
+                            <table class="w-full  ">
+                                <tr class="text-h6 uppercase border-b border-b-gray-500 ">
+                                    <th class="text-left pb-2">City Life</th>
+                                    <th class="text-center pb-2">Aspect</th>
+                                    <th class="text-left pb-2">Farm Life</th>
+                                </tr>
+                                <tr class="text-h6 border-b border-b-gray-500 space-x-5">
+                                    <td class="py-5">Limited outdoor spaces and exposure to gadgets</td>
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>                                       
+                                           <div>Childrens Growth</div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
+                                            <g>
+                                              <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                            </g>
+                                          </svg>
+                                    </td>
+                                        <td class="py-5">Opportunities for outdoor play, exploration, and creativity</td>
+                                        </tr>
+                                    </table>
+                                </div>                              
+                    </div>
+                    <!-- Inner Slide 15 End -->
+                    
                 </div>
-                
-                <div class="swiper-pagination absolute bottom-0 w-full "></div>
-             </div>
-              <!-- Row 2 End -->
+                <div class="swiper-pagination absolute bottom-0 w-full"></div>
+            </div>
+            <!-- Row 2 End-->
 
          </div>
         <!-- Main Slide 4 End -->
@@ -477,7 +926,10 @@
              <div class="w-full max-w-5xl mx-auto py-16 text-gray-800 grid grid-cols-3 gap-8 ">
                 <!-- Grid 1 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Architecture in Harmony with Nature</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45  rounded-sm">
+                        <div class="-rotate-45">1</div>
+                    </div>
+                    <div class="pt-5 text-h6  font-bold leading-none font-centaur">Architecture in Harmony with Nature</div>
                     <ul class="text-p list-disc">
                         <li>Thoughtfully designed glass structures
                             for natural light and scenic views.</li>
@@ -490,7 +942,10 @@
 
                 <!-- Grid 2 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">World-Class Amenities</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">2</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">World-Class Amenities</div>
                     <ul class="text-p list-disc">
                         <li>Family-Friendly Pool: A perfect spot for
                             relaxation and family bonding.</li>
@@ -510,7 +965,10 @@
 
                 <!-- Grid 3 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Proximity and Serenity</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">3</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Proximity and Serenity</div>
                     <ul class="text-p list-disc">
                         <li>Located just 40 km from Bengaluru city
                             center, close enough to access urban
@@ -525,7 +983,10 @@
 
                 <!-- Grid 4 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Community-Oriented Living</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">4</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Community-Oriented Living</div>
                     <ul class="text-p list-disc">
                         <li>Gated community with 24/7 security
                             for peace of mind.</li>
@@ -539,7 +1000,10 @@
 
                 <!-- Grid 5 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Sustainable Living Practices</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">5</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Sustainable Living Practices</div>
                     <ul class="text-p list-disc">
                         <li>Solar-powered lighting and
                             energy-efficient infrastructure.</li>
@@ -555,7 +1019,10 @@
 
                 <!-- Grid 6 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Wellness and Fitness Features</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">6</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Wellness and Fitness Features</div>
                     <ul class="text-p list-disc">
                         <li>Yoga and meditation zones for mental
                             rejuvenation.</li>
@@ -570,7 +1037,10 @@
 
                 <!-- Grid 7 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Event and Leisure Spaces</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">7</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Event and Leisure Spaces</div>
                     <ul class="text-p list-disc">
                         <li>Amphitheater for cultural events, movie
                             nights, or social gatherings.</li>
@@ -585,7 +1055,10 @@
 
                 <!-- Grid 8 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Technological Advancements</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">8</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Technological Advancements</div>
                     <ul class="text-p list-disc">
                         <li>High-speed internet connectivity for
                             work-from-home needs.</li>
@@ -598,7 +1071,10 @@
 
                 <!-- Grid 9 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Accessibility to Nearby Attractions</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">9</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Accessibility to Nearby Attractions</div>
                     <ul class="text-p list-disc">
                         <li>Proximity to scenic spots like Nandi
                             Hills and countryside trekking trails.</li>
@@ -611,7 +1087,10 @@
 
                 <!-- Grid 10 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Customizable Plot Designs</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">10</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Customizable Plot Designs</div>
                     <ul class="text-p list-disc">
                         <li>Choose your preferred plot size to
                             build a dream farmhouse or villa.</li>
@@ -625,7 +1104,10 @@
 
                 <!-- Grid 11 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Children's Adventure Zones</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">11</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Children's Adventure Zones</div>
                     <ul class="text-p list-disc">
                         <li>Treehouses and outdoor adventure
                             zones for kids to explore and learn.</li>
@@ -638,7 +1120,10 @@
 
                 <!-- Grid 12 -->
                 <div class="flex-1 flex flex-col justify-start px-8 space-y-2">
-                    <div class=" text-h6 font-bold leading-none font-centaur">Investment Opportunity</div>
+                    <div class="w-[40px] h-[40px] bg-customGreen text-white flex justify-center items-center  rotate-45 rounded-sm">
+                        <div class="-rotate-45">12</div>
+                    </div>
+                    <div class="pt-5 text-h6 font-bold leading-none font-centaur">Investment Opportunity</div>
                     <ul class="text-p list-disc">
                         <li>Strategically located for potential
                             appreciation in value over time.</li>
@@ -664,39 +1149,123 @@
 
             <div class="swiper inner-swiper-2 w-full h-auto">
                 <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
                     <div class="swiper-slide">
                        
                             <div class="bg-customGreen opacity-85 p-8 h-full">
                                 <div class="uppercase text-h6 mb-2">Prime Location</div>
-                                <div class="text-p">Benefit from easy access to major IT hubs, shopping malls, educational institutions, and healthcare facilities.</div>
+                                <div class="text-p">Benefit from easy access to major IT hubs, shopping malls, educational
+                                    institutions, and healthcare facilities.</div>
                             </div>
                         
                     </div>
+                    <!-- Slide 1 End -->
+
+                    <!-- Slide 2 -->
                     <div class="swiper-slide">
                         
                             <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Investment Growth</div>
-                                <div class="text-p">Strategic location ensures excellent appreciation potential and rental income opportunities.</div>
+                                <div class="uppercase text-h6 mb-2">Sustainable Living</div>
+                                <div class="text-p">Cultivate your own organic produce and adopt eco-friendly practices</div>
                             </div>
                      
                     </div>
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Lifestyle Benefits</div>
-                                <div class="text-p">Enjoy a perfect blend of urban conveniences and serene countryside living.</div>
-                            </div>
-                        
-                    </div>
+                    <!-- Slide 2 End -->
 
+                    <!-- Slide 3 -->
                     <div class="swiper-slide">
                         
                             <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Lifestyle Benefits</div>
-                                <div class="text-p">Enjoy a perfect blend of urban conveniences and serene countryside living.</div>
+                                <div class="uppercase text-h6 mb-2">Investment Potential</div>
+                                <div class="text-p">Farmland appreciates in value over time, making it a valuable asset.</div>
                             </div>
                         
                     </div>
+                    <!-- Slide 3 End -->
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Aesthetic Design</div>
+                                <div class="text-p">Live in a thoughtfully planned community with modern amenities</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 4 End -->
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Excellent Connectivity</div>
+                                <div class="text-p">Located near Chennai expires Road (6kl) and Amravati expires road
+                                    (1KL) , providing seamless connectivity to Bengaluru and surrounding
+                                    areas.</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 5 End -->
+
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Proximity To Transportation Hubs</div>
+                                <div class="text-p">Close to Whitfield Metro and Railway Stations, facilitating easy travel.</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 6 End -->
+
+                    <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Community Living</div>
+                                <div class="text-p">Part of a vibrant neighborhood, fostering a sense of belonging and
+                                    community engagement.</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 7 End -->
+
+                    <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Ready-to-move Plots</div>
+                                <div class="text-p">Offers plots ranging from 2600 to 6000 sq. ft., ready for immediate
+                                    construction.</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 8 End -->
+
+                    <!-- Slide 9 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Modern Amenities</div>
+                                <div class="text-p">Equipped with kids' play areas, 24x7 security, indoor games, and a large
+                                    green area for recreation.</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 9 End -->
+
+                    <!-- Slide 10 -->
+                    <div class="swiper-slide">
+                        
+                            <div class="bg-customGreen opacity-85 p-8 h-full">
+                                <div class="uppercase text-h6 mb-2">Tranquil Environment</div>
+                                <div class="text-p">Situated in a peaceful area, providing a serene living experience away
+                                    from city noise.</div>
+                            </div>
+                        
+                    </div>
+                    <!-- Slide 10 End -->
+
                 </div>
                 <!-- Navigation arrows -->
                  
@@ -730,45 +1299,69 @@
                      <div class="swiper-slide h-auto flex flex-col space-y-5 p-5">
                          <div>
                             <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free environment
+                                surrounded by lush greenery and open skies.</p>
                          </div>
 
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Thoughtfully Planned Community</div>
+                            <p class="text-p text-gray-500 font-gillSans">A well-designed layout that ensures privacy, convenience, and aesthetic appeal, creating a harmonious living experience.</p>
                          </div>
 
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Modern Infrastructure</div>
+                            <p class="text-p text-gray-500 font-gillSans">State-of-the-art facilities, including paved roads, solar-powered lighting, and effcient water management systems, for a
+                                hassle-free lifestyle.</p>
                          </div>
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Wellness-Oriented Lifestyle</div>
+                            <p class="text-p text-gray-500 font-gillSans">Dedicated spaces for yoga, meditation, and outdoor fitness activities promote physical and mental well-being.</p>
                          </div>
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Perfect Weekend Getaway</div>
+                            <p class="text-p text-gray-500 font-gillSans">Located just 40 km from Bengaluru city center, Landmark Vanasiri offers an ideal retreat for rejuvenation without being
+                                too far from urban conveniences.</p>
                          </div>
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Unique Architectural Design</div>
+                            <p class="text-p text-gray-500 font-gillSans">Glass structures and open layouts bring you closer to nature, allowing for maximum natural light and stunning views.</p>
                          </div>
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Family-Friendly Environment</div>
+                            <p class="text-p text-gray-500 font-gillSans">Spacious recreational zones, swimming pools, and picnic spots make it a perfect place for quality family time.</p>
                          </div>
                          <div>
-                            <div class="text-h6 text-gray-800 font-centaur">Reconnect with Nature</div>
-                            <p class="text-p text-gray-500 font-gillSans">Escape the hustle of city life and immerse yourself in the beauty of nature. Enjoy a pollution-free
-                                environment surrounded by lush greenery and open skies</p>
+                            <div class="text-h6 text-gray-800 font-centaur">Pet-Friendly Spaces</div>
+                            <p class="text-p text-gray-500 font-gillSans">Exclusive areas where your pets can roam, play, and enjoy the open environment safely.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">Enhanced Security</div>
+                            <p class="text-p text-gray-500 font-gillSans">A gated community with 24/7 security and CCTV surveillance ensures your peace of mind.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">Vibrant Community Living</div>
+                            <p class="text-p text-gray-500 font-gillSans">Join a neighborhood of like-minded individuals who value nature, serenity, and a luxurious lifestyle.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">Ample Customization Options</div>
+                            <p class="text-p text-gray-500 font-gillSans">Design your dream farmhouse or villa on your terms with customizable plot sizes and designs.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">Economic Value</div>
+                            <p class="text-p text-gray-500 font-gillSans">Invest in farmland with the potential for long-term appreciation, making it a smart and secure financial decision.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">Proximity to Landmarks and Attractions</div>
+                            <p class="text-p text-gray-500 font-gillSans">Close to Mysore Road and popular destinations like Nandi Hills, offering easy access to recreational and cultural
+                                experiences.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">Stress-Free Living</div>
+                            <p class="text-p text-gray-500 font-gillSans">Breathe fresh air, escape city chaos, and embrace a life free from noise, pollution, and overcrowding.</p>
+                         </div>
+                         <div>
+                            <div class="text-h6 text-gray-800 font-centaur">A Lifestyle for All Generations</div>
+                            <p class="text-p text-gray-500 font-gillSans">From children’s adventure zones to serene spots for retirees, Landmark Vanasiri caters to the needs of all age groups.</p>
                          </div>
                  </div>
              </div>
@@ -884,14 +1477,17 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal" start="2">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Excellent Connectivity</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Road Access:</li>
+                            <li>Close to National Highway 75 (NH 75),
+                                facilitating easy travel to Bengaluru and
+                                other major cities.</li>
+                            <li>Public Transport:</li>
+                            <li>Availability of bus services and proximity
+                                to railway stations enhance connectivity.</li>
                         </ul>
                     </div>
                      <!-- Inner Slide 2 End -->
@@ -900,14 +1496,17 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal "start="3">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Industrial and Economic Growth</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Industrial Hubs: Near the
+                                Bangalore-Chennai Industrial Corridor,
+                                promoting economic development and
+                                employment opportunities.</li>
+                            <li>Business Parks: Proximity to industrial
+                                areas and business parks attracts
+                                professionals seeking residence nearby.</li>
                         </ul>
                     </div>
                     <!-- Inner Slide 3 End -->
@@ -916,14 +1515,16 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal" start="4">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Real Estate Appreciation</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Investment Potential: The area's growth
+                                trajectory suggests promising returns on
+                                real estate investments.</li>
+                                <li>Development Projects: Ongoing
+                                    infrastructure projects contribute to
+                                    property value appreciation.</li>
                         </ul>
                     </div>
                     <!-- Inner Slide 4 End -->
@@ -932,14 +1533,16 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal" start="5">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Social Infrastructure</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Educational Institutions: Access to
+                                reputable schools and colleges within a
+                                short distance.</li>
+                                <li>Healthcare Facilities: Nearby hospitals
+                                    and clinics ensure medical needs are met
+                                    promptly.</li>
                         </ul>
                     </div>
                     <!-- Inner Slide 5 End -->
@@ -948,14 +1551,16 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal" start="6">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Environmental Benefits</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Green Spaces: Surrounded by natural
+                                landscapes, offering a serene and
+                                pollution-free environment.</li>
+                                <li>Water Bodies: Proximity to lakes and
+                                    parks enhances recreational
+                                    opportunities.</li>
                         </ul>
                     </div>
                     <!-- Inner Slide 6 End -->
@@ -964,14 +1569,17 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal" start="7">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Lifestyle and Amenities</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Shopping and Entertainment: Close to
+                                shopping centers, restaurants, and
+                                entertainment hubs for a balanced
+                                lifestyle.</li>
+                                <li>Community Living: Part of a developing
+                                    community with modern amenities and
+                                    facilities.</li>
                         </ul>
                     </div>
                     <!-- Inner Slide 7 End -->
@@ -980,14 +1588,17 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                     <div class="swiper-slide flex flex-col space-y-3 p-10 ">
                         <div class=" text-p font-bold leading-none font-centaur">
                             <ol class="list-decimal" start="8">
-                                <li>Proximity to Bengaluru City</li>
+                                <li>Future Developments</li>
                             </ol>
                         </div>
                         <ul class="text-sm list-disc">
-                            <li>Distance: Approximately 30 kilometers
-                                from Bengaluru city center, providing
-                                convenient access to urban amenities
-                                while maintaining a tranquil rural setting.</li>
+                            <li>Infrastructure Projects: Planned
+                                developments like the Satellite Town
+                                Ring Road (STRR) are expected to
+                                boost connectivity and growth.</li>
+                                <li>Economic Zones: Proposed economic
+                                    zones in the vicinity may further
+                                    enhance the area's appeal.</li>
                         </ul>
                     </div>
                     <!-- Inner Slide 8 End -->
@@ -1008,7 +1619,7 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
 
         <!-- Main Slide 11 -->
          <div class="swiper-slide">
-            <div class="w-[calc(100%-40px)] h-full mx-auto flex  gap-20 pt-32">
+            <div class="w-[calc(100%-40px)] h-full mx-auto flex  gap-20 items-center">
                 <div class="w-4/12 flex flex-col font-centaur leading-none text-gray-800 space-y-10">
                     <div class="text-h2 ">Major Warehouse
                         Projects in
@@ -1057,7 +1668,7 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
             </div>
          </div>
         <!-- Main Slide 11 End -->
-
+       </div>  
     </div>
     <!-- Main Swiper End -->
 
