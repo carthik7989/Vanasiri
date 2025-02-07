@@ -25,6 +25,11 @@ module.exports = {
         centaur: ["Centaur", "serif"],
         timesnewroman: ["TimesNewRoman", "serif"],
       },
+      backgroundImage:{
+        slide1: "url('assets/images/slide1.jpg')",
+        slide2: "url('assets/images/slide2.jpg')",
+        slide3: "url('assets/images/slide3.jpg')",
+      },
       height: {
         '0.2': '0.05rem',
       }
