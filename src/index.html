@@ -13,52 +13,71 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="/dist/output.min.css" />
+    <!-- <link rel="stylesheet" href="/dist/output.min.css" /> -->
+    <link rel="stylesheet" href="output.css" />
   </head>
 
   <body class="relative h-full">
     <!-- Popup -->
-    <div class="popup fixed   w-full h-full bg-customGreen z-20 hidden font-philosopher ">
+    <div class="popup fixed  w-full h-full bg-gray-200 z-20 hidden font-philosopher ">
         <div class="w-full h-full flex flex-col p-4 gap-5">
-            <div class="close self-end text-white hover:cursor-pointer">Close</div>
-            <div class="grid grid-cols-4 gap-4 h-full">
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="0">
-                    Slide 1
+            <div class="close self-end text-customGreen hover:cursor-pointer">Close</div>
+            <div class="grid grid-cols-4 gap-4 h-full text-white text-p">
+                <div class="slide-card  bg-thumbnail1 bg-blend-overlay bg-cover bg-center  rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="0">
+                    <div class="bg-customGreen/70 rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 1</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="1">
-                    Slide 2
+                <div class="slide-card bg-thumbnail2 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="1">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4">Slide 2</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="2">
-                    Slide 3
+                <div class="slide-card bg-thumbnail3 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="2">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 3</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="3">
-                    Slide 4
+                <div class="slide-card bg-thumbnail4 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="3">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 4</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="4">
-                    Slide 5
+                <div class="slide-card bg-thumbnail5 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="4">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4">Slide 5</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="5">
-                    Slide 6
+                <div class="slide-card bg-thumbnail6 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="5">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 6</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="6">
-                    Slide 7
+                <div class="slide-card bg-thumbnail7 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="6">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 7</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="7">
-                    Slide 8
+                <div class="slide-card bg-thumbnail8 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="7">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4">  Slide 8</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="8">
-                    Slide 9
+                <div class="slide-card bg-thumbnail9 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="8">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 9</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="9">
-                    Slide 10
+                <div class="slide-card  bg-thumbnail10 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end  justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="9">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4">Slide 10</div>
                 </div>
-                <div class="slide-card bg-white rounded-lg shadow-lg flex items-center justify-center text-2xl font-bold hover:bg-teal-100 cursor-pointer transition-colors" data-slide="10">
-                    Slide 11
+                <div class="slide-card bg-thumbnail11 bg-blend-overlay bg-cover bg-center rounded-lg shadow-lg flex items-end justify-start  font-bold hover:bg-customGreen/10 cursor-pointer transition-colors" data-slide="10">
+                    <div class="bg-customGreen/70  rounded-tr-xl rounded-bl-lg py-2 px-4"> Slide 11</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Popup End -->
+
+    <!-- Video Popup -->
+    <div class="video-popup fixed w-full h-full bg-black/90 z-30 hidden">
+        <div class="w-full h-full flex flex-col p-4">
+            <div class="close-video self-end text-white hover:cursor-pointer mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div class="flex-1 flex justify-center items-center">
+                <div class="w-full max-w-4xl aspect-video bg-black">
+                    <iframe id="video-frame" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Popup End -->
+
     <!-- Header -->
     <header class="fixed top-0 w-full z-10 font-philosopher">
       <!-- Top Bar -->
@@ -144,34 +163,47 @@
         </div>
         <!-- Main Slide 1 End -->
 
-        <!-- Main Slide 2 -->
-        <div class="swiper-slide flex">
-          <div class="w-full bg-slide2 bg-cover bg-center"></div>
-          <div class="w-1/3 flex flex-col justify-end text-gray-900 text-h2 font-centaur space-y-10 p-5">
-            <div class="leading-none">
-              Discover<br />
-              the Joy of<br />
-              Farm Living
-            </div>
-            <p class="text-p">
-              Escape the hustle and bustle of city life and immerse yourself in
-              the beauty of nature at Landmark Vanasiri. Located just 40 km from
-              Bengaluru city center, this idyllic retreat offers the perfect
-              blend of modern comforts and serene countryside living. Designed
-              to elevate your lifestyle, Landmark Vanasiri is your gateway to a
-              peaceful, rejuvenating, and sustainable way of life.
-            </p>
-          </div>
+      <!-- Main Slide 2 -->
+      <div class="swiper-slide flex">
+        <div class="w-full bg-[url('assets/images/twentythree.jpeg')] bg-cover bg-center flex justify-center items-center">
+          <div class="play-button group cursor-pointer" data-video-url="https://www.youtube.com/embed/xTdsB48w-Z0?autoplay=1">
+              <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center group-hover:bg-opacity-30 transition-all duration-300">
+                  <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-glow">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8 text-customGreen ml-1" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                      </svg>
+                  </div>
+              </div>
+          </div>          
         </div>
-        <!-- Main Slide 2 End -->
+        <div class="w-1/3 flex flex-col justify-end text-gray-900 text-h2 font-centaur space-y-10 p-5">
+          <div class="leading-none">
+            Discover<br />
+            the Joy of<br />
+            Farm Living
+          </div>
+          <p class="text-p">
+            Escape the hustle and bustle of city life and immerse yourself in
+            the beauty of nature at Landmark Vanasiri. Located just 40 km from
+            Bengaluru city center, this idyllic retreat offers the perfect
+            blend of modern comforts and serene countryside living. Designed
+            to elevate your lifestyle, Landmark Vanasiri is your gateway to a
+            peaceful, rejuvenating, and sustainable way of life.
+          </p>
+        </div>
+      </div>
+      <!-- Main Slide 2 End -->
+
 
         <!-- Main Slide 3 -->
-        <div class="swiper-slide flex flex-col overflow-y-scroll scrollbar-hidden">
+        <div class="swiper-slide flex flex-col overflow-y-scroll scrollbar-hidden ">
+            
+            
              <!-- Row 1 -->
              <div class=" max-container w-[calc(100%-40px)]  flex justify-center items-center space-x-5 pt-32">
                 <div class="w-1/5 text-h2 font-centaur leading-none">Why Invest<br>
                     in Farmland?</div>
-                <div class="flex-1 h-[500px] bg-[url('assets/images/slide2.jpg')] bg-cover bg-center"></div>
+                <div class="flex-1 h-[500px] bg-[url('assets/images/twentyfour.jpeg')] bg-cover bg-center"></div>
 
                 <div class="w-1/5">Owning farmland is more than just a financial
                     investment—it’s a commitment to a healthier, more
@@ -186,7 +218,7 @@
               <!-- Row 3 -->
               <div class="flex justify-center w-full py-8 bg-customCream ">
                 <div class="flex space-x-4 w-full max-w-2xl ">
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/four.jpeg" alt="" class="w-1/2">
                     <div class="flex-1 flex flex-col justify-center px-8 space-y-4">
                         <div class=" text-h5 leading-none font-centaur">Escape the Urban Grind</div>
                         <ul class="text-p list-disc">
@@ -215,7 +247,7 @@
                           
                         </ul>
                     </div>
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/eight.jpeg" alt="" class="w-1/2">
                    
                 </div>
             </div>
@@ -224,7 +256,7 @@
             <!-- Row 5 -->
             <div class="flex justify-center w-full py-8 bg-customCream ">
                 <div class="flex space-x-4 w-full max-w-2xl ">
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/one.jpeg" alt="" class="w-1/2">
                     <div class="flex-1 flex flex-col justify-center px-8 space-y-4">
                         <div class=" text-h5 leading-none font-centaur">Long-Term Financial Security </div>
                         <ul class="text-p list-disc">
@@ -253,7 +285,7 @@
                           
                         </ul>
                     </div>
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/thirteen.jpeg" alt="" class="w-1/2">
                    
                 </div>
             </div>
@@ -262,7 +294,7 @@
              <!-- Row 7 -->
              <div class="flex justify-center w-full py-8 bg-customCream ">
                 <div class="flex space-x-4 w-full max-w-2xl ">
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/eleven.jpeg" alt="" class="w-1/2">
                     <div class="flex-1 flex flex-col justify-center px-8 space-y-4">
                         <div class=" text-h5 leading-none font-centaur">Closer to Nature</div>
                         <ul class="text-p list-disc">
@@ -293,7 +325,7 @@
                           
                         </ul>
                     </div>
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/five.jpeg" alt="" class="w-1/2">
                    
                 </div>
             </div>
@@ -302,7 +334,7 @@
              <!-- Row 9 -->
              <div class="flex justify-center w-full py-8 bg-customCream ">
                 <div class="flex space-x-4 w-full max-w-2xl ">
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/twentyfive.jpeg" alt="" class="w-1/2">
                     <div class="flex-1 flex flex-col justify-center px-8 space-y-4">
                         <div class=" text-h5 leading-none font-centaur">Generational Wealth</div>
                         <ul class="text-p list-disc">
@@ -332,7 +364,7 @@
                           
                         </ul>
                     </div>
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/six.jpeg" alt="" class="w-1/2">
                    
                 </div>
             </div>
@@ -341,7 +373,7 @@
              <!-- Row 11 -->
              <div class="flex justify-center w-full py-8 bg-customCream ">
                 <div class="flex space-x-4 w-full max-w-2xl ">
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/twentyseven.jpeg" alt="" class="w-1/2">
                     <div class="flex-1 flex flex-col justify-center px-8 space-y-4">
                         <div class=" text-h5 leading-none font-centaur">Growing Demand</div>
                         <ul class="text-p list-disc">
@@ -371,7 +403,7 @@
                           
                         </ul>
                     </div>
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/twentytwo.jpeg" alt="" class="w-1/2">
                    
                 </div>
             </div>
@@ -380,7 +412,7 @@
              <!-- Row 13 -->
              <div class="flex justify-center w-full py-8 bg-customCream ">
                 <div class="flex space-x-4 w-full max-w-2xl ">
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/twelve.jpeg" alt="" class="w-1/2">
                     <div class="flex-1 flex flex-col justify-center px-8 space-y-4">
                         <div class=" text-h5 leading-none font-centaur">Recreational and Leisure Activities</div>
                         <ul class="text-p list-disc">
@@ -408,7 +440,7 @@
                           
                         </ul>
                     </div>
-                    <img src="assets/images/slide3.jpg" alt="" class="w-1/2">
+                    <img src="assets/images/ten.jpeg" alt="" class="w-1/2">
                    
                 </div>
             </div>
@@ -420,8 +452,8 @@
          <div class="swiper-slide flex justify-center items-center flex-col font-centaur text-white">
              <!-- Row 1 -->
              <div class="flex flex-1 w-full  relative">
-                <div class="w-1/2 bg-slide1 bg-cover bg-center"></div>
-                <div class="w-1/2 bg-slide2 bg-cover bg-center"></div>
+                <div class="w-1/2 bg-[url('assets/images/slide4b.jpg')] bg-cover bg-center"></div>
+                <div class="w-1/2 bg-[url('assets/images/slide4a.jpg')] bg-cover bg-center"></div>
                 <div class="flex flex-col  absolute bottom-5 left-1/2 transform -translate-x-1/2 p-16 bg-customGreen opacity-90">
                     <div class="text-h2  leading-none">How Farmland Living<br>
                         Differs from City Life</div>
@@ -439,9 +471,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="w-1/3  text-left pb-2">City Life</th>
-                                    <th class="w-1/3  text-center pb-2">Aspect</th>
-                                    <th class="w-1/3  text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%]  text-left pb-2">City Life</th>
+                                    <th class="w-[40%]  text-center pb-2">Aspect</th>
+                                    <th class="w-[30%]  text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Pollution, noise, and concrete jungles</td>
@@ -471,13 +503,13 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class=" text-left pb-2">City Life</th>
-                                    <th class=" text-center pb-2">Aspect</th>
-                                    <th class=" text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%]  text-left pb-2">City Life</th>
+                                    <th class="w-[40%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Fast-paced, competitive, and stressful</td>
-                                    <td class="flex items-center justify-center gap-5 uppercase  py-5">
+                                    <td class="flex items-center justify-center gap-5 uppercase text-center py-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
                                             <g>
                                               <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
@@ -501,9 +533,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[40%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Sedentary lifestyle, limited connection with nature</td>
@@ -532,9 +564,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Reliant on processed and store-bought food</td>
@@ -563,9 +595,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[40%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">High expenses for housing, utilities, and daily needs</td>
@@ -594,9 +626,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[40%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Limited space, crowded living, and minimal privacy</td>
@@ -625,9 +657,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Constant traffic, honking, and construction disturbances</td>
@@ -656,9 +688,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Often isolated, with little time for social interactions</td>
@@ -687,9 +719,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Minimal, often restricted to parks or balconies</td>
@@ -718,9 +750,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Longer commute times, less personal time</td>
@@ -749,9 +781,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%]0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Limited to urban settings like malls or gyms</td>
@@ -761,7 +793,7 @@
                                               <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
                                             </g>
                                           </svg>                                       
-                                           <div>Recreational Activities<div>
+                                           <div>Recreational Activities</div>
                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
                                             <g>
                                               <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
@@ -780,9 +812,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th   class=" text-left pb-2">City Life</th>
-                                    <th  class=" text-center pb-2">Aspect</th>
-                                    <th  class=" text-left pb-2">Farm Life</th>
+                                    <th   class="w-[30%] text-left pb-2">City Life</th>
+                                    <th  class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th  class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td style="width: 30%;" class="py-5">Expensive apartments or limited-size houses</td>
@@ -792,7 +824,7 @@
                                               <path d="M32.24,2.25L3.45,2.25L4.27,0C3.18,0.950001,1.42,1.85,0,2.38C1.42,2.91,3.18,3.81,4.27,4.76L3.46,2.51L32.25,2.51L32.25,2.26L32.24,2.25Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
                                             </g>
                                           </svg>                                       
-                                           <div >Property ownership<div>
+                                           <div >Property ownership</div>
                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="32.25" height="4.760002136230469" viewBox="0 0 32.25 4.760002136230469">
                                             <g>
                                               <path d="M0.0100021,2.51L28.8,2.51L27.98,4.76C29.07,3.81,30.83,2.91,32.25,2.38C30.83,1.85,29.07,0.950001,27.98,0L28.79,2.25L0,2.25L0,2.5L0.0100021,2.51Z" fill="#5C5E60" fill-opacity="1" style="mix-blend-mode:passthrough" />
@@ -811,9 +843,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">High resource consumption and carbon footprint</td>
@@ -842,9 +874,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[4w-[30%] 0%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Higher due to work pressure and urban chaos</td>
@@ -873,9 +905,9 @@
                         <div class="w-[calc(100%-80px)] max-container py-10 text-gray-800 leading-none ">
                             <table class="w-full  ">
                                 <tr class="text-h6 uppercase border-b border-b-gray-500 ">
-                                    <th class="text-left pb-2">City Life</th>
-                                    <th class="text-center pb-2">Aspect</th>
-                                    <th class="text-left pb-2">Farm Life</th>
+                                    <th class="w-[30%] text-left pb-2">City Life</th>
+                                    <th class="w-[40%] text-center pb-2">Aspect</th>
+                                    <th class="w-[30%] text-left pb-2">Farm Life</th>
                                 </tr>
                                 <tr class="text-h6 border-b border-b-gray-500 space-x-5">
                                     <td class="py-5">Limited outdoor spaces and exposure to gadgets</td>
@@ -910,7 +942,7 @@
         <!-- Main Slide 5 -->
          <div class="swiper-slide flex flex-col font-centaur text-white overflow-y-scroll scrollbar-hidden">
              <!-- Row 1 -->
-             <div class="flex min-h-screen w-full relative bg-slide2 bg-cover bg-center">
+             <div class="flex min-h-screen w-full relative bg-[url('assets/images/nine.jpeg')] bg-cover bg-center">
                 <div class="flex flex-col  absolute bottom-5 left-0 p-16 bg-customGreen opacity-90">
                     <div class="text-h2  leading-none">Where Nature Meets<br>
                         Modern Luxury</div>
@@ -1141,154 +1173,74 @@
         <!-- Main Slide 5 End -->
 
         <!-- Main Slide 6 -->
-         <div class="swiper-slide bg-slide2 bg-cover bg-center flex flex-col justify-end items-start px-10 pb-10 space-y-10 text-white text-h2 font-centaur leading-none">
+         <div class="swiper-slide bg-[url('assets/images/slide6.jpg')] bg-cover bg-center flex flex-col justify-end items-start px-10 pb-10 space-y-14 text-white text-h2 font-centaur leading-none">
             <div class="flex flex-col">
                 <div>Advantages of Owning Farmland</div>
             <div>at Landmark Vanasiri</div>
             </div>
-
-            <div class="swiper inner-swiper-2 w-full h-auto">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                       
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Prime Location</div>
-                                <div class="text-p">Benefit from easy access to major IT hubs, shopping malls, educational
-                                    institutions, and healthcare facilities.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 1 End -->
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Sustainable Living</div>
-                                <div class="text-p">Cultivate your own organic produce and adopt eco-friendly practices</div>
-                            </div>
-                     
-                    </div>
-                    <!-- Slide 2 End -->
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Investment Potential</div>
-                                <div class="text-p">Farmland appreciates in value over time, making it a valuable asset.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 3 End -->
-
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Aesthetic Design</div>
-                                <div class="text-p">Live in a thoughtfully planned community with modern amenities</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 4 End -->
-
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Excellent Connectivity</div>
-                                <div class="text-p">Located near Chennai expires Road (6kl) and Amravati expires road
-                                    (1KL) , providing seamless connectivity to Bengaluru and surrounding
-                                    areas.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 5 End -->
-
-                    <!-- Slide 6 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Proximity To Transportation Hubs</div>
-                                <div class="text-p">Close to Whitfield Metro and Railway Stations, facilitating easy travel.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 6 End -->
-
-                    <!-- Slide 7 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Community Living</div>
-                                <div class="text-p">Part of a vibrant neighborhood, fostering a sense of belonging and
-                                    community engagement.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 7 End -->
-
-                    <!-- Slide 8 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Ready-to-move Plots</div>
-                                <div class="text-p">Offers plots ranging from 2600 to 6000 sq. ft., ready for immediate
-                                    construction.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 8 End -->
-
-                    <!-- Slide 9 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Modern Amenities</div>
-                                <div class="text-p">Equipped with kids' play areas, 24x7 security, indoor games, and a large
-                                    green area for recreation.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 9 End -->
-
-                    <!-- Slide 10 -->
-                    <div class="swiper-slide">
-                        
-                            <div class="bg-customGreen opacity-85 p-8 h-full">
-                                <div class="uppercase text-h6 mb-2">Tranquil Environment</div>
-                                <div class="text-p">Situated in a peaceful area, providing a serene living experience away
-                                    from city noise.</div>
-                            </div>
-                        
-                    </div>
-                    <!-- Slide 10 End -->
-
-                </div>
-                <!-- Navigation arrows -->
-                 
-                <!-- <div class="swiper-3-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/50 hover:bg-white/80 w-8 h-8 flex items-center justify-center cursor-pointer rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            
+            <div class="flex items-center w-full gap-8">
+                <button class="swiper2-button-prev text-white hover:text-customGreen transition-colors w-24 flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-32 h-32">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                     </svg>
+                </button>
+
+                <div class="swiper inner-swiper-2 flex-1 h-full">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="h-full bg-customGreen bg-opacity-90 p-8">
+                                <div class="text-h6 uppercase mb-4">PRIME LOCATION</div>
+                                <p class="text-p font-gillSans leading-tight">Benefit from easy access to major IT hubs, shopping malls, educational institutions, and healthcare facilities.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide  ">
+                            <div class="h-full bg-customGreen bg-opacity-90 p-8  ">
+                                <div class="text-h6 uppercase mb-4">SUSTAINABLE LIVING</div>
+                                <p class="text-p font-gillSans leading-tight">Cultivate your own organic produce and adopt eco-friendly practices.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="h-full bg-customGreen bg-opacity-90 p-8">
+                                <div class="text-h6 uppercase mb-4">AESTHETIC DESIGN</div>
+                                <p class="text-p font-gillSans leading-tight">Live in a thoughtfully planned community with modern amenities.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="h-full bg-customGreen bg-opacity-90 p-8">
+                                <div class="text-h6 uppercase mb-4">INVESTMENT POTENTIAL</div>
+                                <p class="text-p font-gillSans leading-tight">Farmland appreciates in value over time, making it a valuable asset.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <div class="h-full bg-customGreen bg-opacity-90 p-8">
+                                <div class="text-h6 uppercase mb-4">EXCELLENT CONNECTIVITY</div>
+                                <p class="text-p font-gillSans leading-tight">Located near major roads, providing seamless connectivity to Bengaluru and surrounding areas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-3-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/50 hover:bg-white/80 w-8 h-8 flex items-center justify-center cursor-pointer rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+
+                <button class="swiper2-button-next text-white hover:text-customGreen transition-colors w-24 flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="w-32 h-32">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
-                </div> -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                
+                </button>
             </div>
-
          </div>
         <!-- Main Slide 6 End -->
 
         <!-- Main Slide 7 -->
-         <div class="swiper-slide flex items-end bg-slide2 bg-cover bg-center">
+         <div class="swiper-slide flex items-end bg-[url('assets/images/slide7.jpg')] bg-cover bg-center">
             <div class="flex h-[60vh] w-[calc(100%-40px)] max-container ">
                 <div class="w-1/2 text-white text-h2 leading-none font-centaur ">
                     Experience Leisure Living<br>
@@ -1376,7 +1328,7 @@
 
         <!-- Main Slide 8 -->
         <div class="swiper-slide flex">
-            <div class="w-[60%] bg-slide2 bg-cover bg-center"></div>
+            <div class="w-[60%] bg-[url('assets/images/fourteen.jpeg')] bg-cover bg-center"></div>
             <div class="w-[40%] flex flex-col justify-end text-gray-900 text-h2 font-centaur space-y-8 p-5">
               <div class="text-white bg-customGreen leading-none p-5 -ml-32">
                 <div class="text-h2">Make the choice to embrace a
@@ -1404,7 +1356,7 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
 
         <!-- Main Slide 9 -->
         <div class="swiper-slide flex">
-            <div class="w-[60%] bg-slide2 bg-cover bg-center"></div>
+            <div class="w-[60%] bg-[url('assets/images/twentyone.jpeg')] bg-cover bg-center"></div>
             <div class="w-[40%] h-full flex items-end text-gray-900 text-h2 font-centaur space-y-8 p-5">
             <div class="flex max-h-max">
                 <div class="w-1/2  flex flex-col justify-start px-4 space-y-2">
@@ -1619,7 +1571,7 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
 
         <!-- Main Slide 11 -->
          <div class="swiper-slide">
-            <div class="w-[calc(100%-40px)] h-full mx-auto flex  gap-20 items-center">
+            <div class="w-[calc(100%-40px)] h-full mx-auto flex  gap-20 pt-44">
                 <div class="w-4/12 flex flex-col font-centaur leading-none text-gray-800 space-y-10">
                     <div class="text-h2 ">Major Warehouse
                         Projects in
@@ -1629,20 +1581,53 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                         <p class="text-p font-gillSans  ">Hosakote is emerging as a significant logistics hub in the
                             Bangalore Rural district, attracting substantial investments in
                             warehousing and industrial infrastructure. </p>
-                            <p class="text-p font-gillSans">Notable projects include: </p>          
+                            <p class="text-p font-gillSans">Notable projects include: </p>  
+                            <div class="flex space-x-2">
+                                <button class="swiper4-button-prev text-customGreen disabled:text-customGreen disabled:text-opacity-50 disabled:cursor-not-allowed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="26" height="26" viewBox="0 0 26 26">
+                                        <defs>
+                                          <clipPath id="master_svg0_20_323">
+                                            <rect x="0" y="0" width="26" height="26" rx="0" />
+                                          </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#master_svg0_20_323)">
+                                          <rect x="0" y="0" width="26" height="26" rx="0" fill="#ACACAE" fill-opacity="1" />
+                                          <g>
+                                            <path d="M17.59,22.16L8,12.58L17.59,3L17.990000000000002,3.41L8.82,12.58L17.990000000000002,21.75L17.59,22.16Z" fill="#808080" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                          </g>
+                                        </g>
+                                      </svg>            </button>
+                                <button class="swiper4-button-next text-customGreen disabled:text-customGreen disabled:text-opacity-50 disabled:cursor-not-allowed">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="26" height="26" viewBox="0 0 26 26">
+                                        <defs>
+                                          <clipPath id="master_svg0_20_338">
+                                            <rect x="0" y="0" width="26" height="26" rx="0" />
+                                          </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#master_svg0_20_338)">
+                                          <rect x="0" y="0" width="26" height="26" rx="0" fill="#ACACAE" fill-opacity="1" />
+                                          <g>
+                                            <path d="M8.400002,3L17.990000000000002,12.58L8.400002,22.16L8,21.75L17.17,12.58L8,3.41L8.400002,3Z" fill="#808080" fill-opacity="1" style="mix-blend-mode:passthrough" />
+                                          </g>
+                                        </g>
+                                      </svg>            </button>
+                              </div>        
                 </div>
-               
 
-                <div class="w-8/12 flex flex-col ">
-                    <img class="self-end -mb-20 mr-5 z-10" src="assets/images/Slide2.jpg" alt="" width="300">
-                    <div class="text-h6 ">Sumadhura Logistics Park</div>
-                    <div class="bg-customGreen p-5 text-white text-p ">
-                        <div class="flex flex-col max-w-prose gap-5">
-                            <div>
-                                <p>Location:</p>
-                                <p>Chintamani - Hosakote Road, East Bangalore
-                                </p>
-                            </div>
+                <!-- Inner slider -->   
+                <div class="swiper inner-swiper-4 w-8/12 h-full flex flex-col">
+                    <div class="swiper-wrapper">
+
+                        <!-- Inner Slide 1 -->
+                        <div class="swiper-slide flex flex-col ">
+                            <img class="self-end -mb-20 mr-5 z-10" src="assets/images/slide11a.jpg" alt="" width="300">
+                                <div class="text-h6 ">Sumadhura Logistics Park</div>
+                                     <div class="bg-customGreen p-5 text-white text-p ">
+                                         <div class="flex flex-col max-w-prose gap-5">
+                                            <div>
+                                             <p>Location:</p>
+                                             <p>Chintamani - Hosakote Road, East Bangalore </p>
+                                            </div>
     
                             <div>
                                 <p>Overview:</p>
@@ -1665,6 +1650,47 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
                         
                     </div>
                 </div>
+                 <!-- Inner Slide 1 End -->
+
+                        <!-- Inner Slide 2 -->
+                        <div class="swiper-slide flex flex-col  ">
+                            <img class="self-end -mb-20 mr-5 z-10" src="assets/images/slide11b.jpg" alt="" width="300">
+                                <div class="text-h6 ">Prologis and RMZ Group Logistics Park</div>
+                                     <div class="bg-customGreen p-5 text-white text-p ">
+                                         <div class="flex flex-col max-w-prose gap-5">
+                                            <div>
+                                             <p>Location:</p>
+                                             <p>Hosakote, Bangalore </p>
+                                            </div>
+    
+                            <div>
+                                <p>Overview:</p>
+                                <p>In a strategic partnership, Prologis and RMZ Group are developing a 30-acre
+                                    logistics park in Hosakote. The initial phase will deliver 500,000 sq ft of Grade
+                                    A warehousing space, targeting third-party logistics and industrial clients.
+                                </p>
+                            </div>
+    
+                            <div>
+                                <p>These developments underscore Hosakote's strategic importance in the
+                                    logistics and warehousing sector, driven by its proximity to Bangalore and
+                                    robust infrastructure.</p>
+                                    <br><br><br>
+                                
+                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                 <!-- Inner Slide 1 End -->
+
+                      
+                    </div>
+
+                </div>
+                <!-- Inner slider End -->
+               
             </div>
          </div>
         <!-- Main Slide 11 End -->
@@ -1674,6 +1700,6 @@ Landmark in Hosadimbahalli, Hosakote, Bangalore Rural, Karnataka 562135
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/src/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

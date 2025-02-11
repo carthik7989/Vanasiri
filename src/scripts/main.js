@@ -1,5 +1,4 @@
 
-
 const menu = document.querySelector('.menu');
 const close = document.querySelector('.close');
 const popup = document.querySelector('.popup');
@@ -98,30 +97,32 @@ const innerSwiper1 = new Swiper(".inner-swiper-1", {
   },
 });
 
-
-
-
 const innerSwiper2 = new Swiper(".inner-swiper-2", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 50,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  spaceBetween: 100,
+  centeredSlides: true,
+  nested:true,
+  initialSlide: 1,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper2-button-next",
+    prevEl: ".swiper2-button-prev",
   },
-  nested: true,
-  noSwiping: false,
-  allowTouchMove: true,
-  on: {
-    touchStart: function (swiper, event) {
-      event.stopPropagation();
-    },
-  },
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 20,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 30,
+  //   },
+  //   1024: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 30,
+  //   },
+  // },
 });
 
 const innerSwiper3 = new Swiper(".inner-swiper-3", {
@@ -144,6 +145,24 @@ const innerSwiper3 = new Swiper(".inner-swiper-3", {
   },
 });
 
+const innerSwiper4 = new Swiper(".inner-swiper-4", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween:20,
+  navigation: {
+    nextEl: ".swiper4-button-next",
+    prevEl: ".swiper4-button-prev",
+  },
+  nested: true,
+  noSwiping: false,
+  on: {
+    touchStart: function (swiper, event) {
+      event.stopPropagation();
+    },
+  },
+});
+
 const verticalSwiper = new Swiper(".vertical-swiper", {
   direction: "vertical",
   slidesPerView: "auto",
@@ -155,3 +174,39 @@ const verticalSwiper = new Swiper(".vertical-swiper", {
    nested:true,
 });
 
+   // Video popup functionality
+   const playButton = document.querySelector('.play-button');
+   const videoPopup = document.querySelector('.video-popup');
+   const closeVideoButton = document.querySelector('.close-video');
+   const videoFrame = document.querySelector('#video-frame');
+
+   playButton.addEventListener('click', () => {
+       const videoUrl = playButton.dataset.videoUrl;
+       videoFrame.src = videoUrl;
+       videoPopup.classList.remove('hidden');
+       document.body.style.overflow = 'hidden'; // Prevent scrolling
+   });
+
+   closeVideoButton.addEventListener('click', () => {
+       videoFrame.src = ''; // Stop video playback
+       videoPopup.classList.add('hidden');
+       document.body.style.overflow = ''; // Restore scrolling
+   });
+
+   // Close video popup when clicking outside the video
+   videoPopup.addEventListener('click', (e) => {
+       if (e.target === videoPopup) {
+           closeVideoButton.click();
+       }
+   });
+
+   // Close video popup on escape key
+   document.addEventListener('keydown', (e) => {
+       if (e.key === 'Escape' && !videoPopup.classList.contains('hidden')) {
+           closeVideoButton.click();
+       }
+   });
+
+ 
+
+ 
