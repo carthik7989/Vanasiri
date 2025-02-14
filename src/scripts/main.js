@@ -1,4 +1,3 @@
-
 const menu = document.querySelector('.menu');
 const close = document.querySelector('.close');
 const popup = document.querySelector('.popup');
@@ -207,6 +206,64 @@ const verticalSwiper = new Swiper(".vertical-swiper", {
        }
    });
 
- 
+  // Function to handle scroll on Swiper slides
+function handleScroll(e) {
+  const slide = e.target;
+  const currentScrollPosition = slide.scrollTop;
+  const downArrow = slide.querySelector('.down-arrow');
+  
+  if (downArrow) {
+      // Show button only when at the top (scrollTop is 0)
+      if (currentScrollPosition === 0) {
+          downArrow.style.opacity = '1';
+          downArrow.style.pointerEvents = 'auto';
+      } else {
+          downArrow.style.opacity = '0';
+          downArrow.style.pointerEvents = 'none';
+      }
+  }
+}
 
- 
+// Function to add click handler to down arrow
+function addDownArrowClickHandler(arrow) {
+  arrow.addEventListener('click', () => {
+      const slide = arrow.closest('.swiper-slide');
+      if (slide) {
+          slide.scrollBy({
+              top: window.innerHeight,
+              behavior: 'smooth'
+          });
+      }
+  });
+}
+
+// Function to initialize down arrows
+function initializeDownArrows() {
+  // Add scroll event listeners to all swiper slides
+  document.querySelectorAll('.swiper-slide').forEach(slide => {
+      slide.addEventListener('scroll', handleScroll);
+      
+      // Initialize the arrow state
+      const downArrow = slide.querySelector('.down-arrow');
+      if (downArrow) {
+          // Set initial state
+          if (slide.scrollTop === 0) {
+              downArrow.style.opacity = '1';
+              downArrow.style.pointerEvents = 'auto';
+          } else {
+              downArrow.style.opacity = '0';
+              downArrow.style.pointerEvents = 'none';
+          }
+          // Add click handler
+          addDownArrowClickHandler(downArrow);
+      }
+  });
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeDownArrows);
+
+// Also initialize when Swiper changes slides
+mainSwiper.on('slideChange', () => {
+  setTimeout(initializeDownArrows, 100); // Small delay to ensure DOM is updated
+});
