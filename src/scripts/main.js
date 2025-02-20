@@ -137,6 +137,24 @@ const innerSwiper3 = new Swiper(".inner-swiper-3", {
     hide: false,
   draggable: true,
   },
+  breakpoints: {
+      320: {
+        slidesPerView: 1,
+        
+      },
+      768:
+      {
+        slidesPerView: 2,
+      },
+      1024:
+      {
+        slidesPerView: 3,
+      },
+      1280:
+      {
+        slidesPerView: 4,
+      },
+    },
   on: {
     touchStart: function (swiper, event) {
       event.stopPropagation();
